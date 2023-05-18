@@ -10,6 +10,7 @@ import Fonts from "theming/fonts";
 import { URQLClient } from "lib/client";
 import { MyMantineProvider } from "theming/mantine";
 import PlexoProvider from "../context/PlexoContext";
+import Script from "next/script";
 
 export type NextPageWithLayout<T = {}> = NextPage<T> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -34,6 +35,11 @@ const PlexoApp = ({
 
   return (
     <>
+      <Script
+        async
+        src={process.env.NEXT_PUBLIC_UMAMI_SRC}
+        data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+      />
       <Head>
         <title>Plexo</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
