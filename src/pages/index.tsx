@@ -45,7 +45,7 @@ const Plexo = () => {
             Open-Source Project Management System for modern innovators
           </Text>
         </Stack>
-        <Button data-umami-event="Demo button" size="md" w={"fit-content"}>
+        <Button size="md" w={"fit-content"} onClick={() => window.umami.track("demo-button")}>
           Explore our demo
         </Button>
       </Stack>
