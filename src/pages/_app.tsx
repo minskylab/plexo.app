@@ -50,7 +50,14 @@ const PlexoApp = ({
 
         {/* OpenGraph Tags */}
         <meta property="og:title" content="Plexo" />
-        <meta property="og:image" content="https://plexo.app/api/og"></meta>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://plexo.app/" />
+        <meta property="og:image" content="https://plexo.app/api/og" />
+        <meta
+          property="og:image:alt"
+          content="Plexo App: Open-Source Project Management System for modern innovators"
+        ></meta>
+        <meta property="og:site_name" content="Plexo" />
 
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="icon" type="image/png" sizes="5x5" href="/plexo.png" />

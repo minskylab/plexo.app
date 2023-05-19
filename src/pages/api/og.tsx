@@ -16,15 +16,12 @@ const imageOg = () => {
             position: "relative",
             color: "#DFDFDF",
             backgroundColor: "#0C0C0C",
-            backgroundSize: "150px 150px",
             height: "100%",
             width: "100%",
             display: "flex",
-            textAlign: "center",
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
-            flexWrap: "nowrap",
           }}
         >
           <div style={{ display: "flex", position: "absolute", top: 0, left: 150 }}>
