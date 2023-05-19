@@ -41,12 +41,17 @@ const PlexoApp = ({
         data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
       />
       <Head>
+        {/* Page Metadata */}
         <title>Plexo</title>
         <meta
           name="description"
           content="Open-Source Project Management System for modern innovators"
         />
+
+        {/* OpenGraph Tags */}
+        <meta property="og:title" content="Plexo" />
         <meta property="og:image" content="https://plexo.app/api/og"></meta>
+
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="icon" type="image/png" sizes="5x5" href="/plexo.png" />
       </Head>
