@@ -1,7 +1,14 @@
-import { Title, Text, Stack, Button, Center, createStyles } from "@mantine/core";
+import {
+  Title,
+  Text,
+  Stack,
+  Button,
+  Center,
+  createStyles,
+} from "@mantine/core";
 import PlexoBackground from "components/resources/PlexoLogoBackground";
 
-const useStyles = createStyles(theme => ({
+const useStyles = createStyles((theme) => ({
   container: {
     position: "relative",
     overflow: "hidden",
@@ -33,7 +40,12 @@ const Plexo = () => {
   return (
     <Center h={"100vh"} className={classes.container}>
       <PlexoBackground />
-      <Stack p={20} spacing={"xl"} align="center" className={classes.textContainer}>
+      <Stack
+        p={20}
+        spacing={"xl"}
+        align="center"
+        className={classes.textContainer}
+      >
         <Title order={1} size={80} className={classes.title}>
           Plexo
         </Title>
@@ -45,7 +57,13 @@ const Plexo = () => {
             Open-Source Project Management System for modern innovators
           </Text>
         </Stack>
-        <Button size="md" w={"fit-content"} onClick={() => window.umami.track("demo-button")}>
+        <Button
+          size="md"
+          w={"fit-content"}
+          href="https://demo.plexo.app"
+          onClick={() => window.umami.track("demo-button")}
+          component="a"
+        >
           Explore our demo
         </Button>
       </Stack>
