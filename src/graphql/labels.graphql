@@ -1,7 +1,0 @@
-query Labels {
-  labels {
-    id
-    name
-    color
-  }
-}

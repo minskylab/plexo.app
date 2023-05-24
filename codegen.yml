@@ -1,8 +1,8 @@
 overwrite: true
 schema:
-  "https://plexo-minsky.internal.minsky.cc/graphql":
+  "https://graphqlzero.almansi.me/api":
     headers:
-      "Authorization": "Bearer xxx"
+      "Authorization": "Bearer <YOUR-TOKEN>"
 documents: "src/graphql/**/*.graphql"
 generates:
   src/integration/graphql.tsx:

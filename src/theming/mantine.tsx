@@ -38,16 +38,6 @@ export const MyMantineProvider = ({ children, colorScheme }: MantineProviderProp
               dark: colorBrandDark,
             },
             primaryColor: "brand",
-            components: {
-              Tooltip: {
-                styles: {
-                  tooltip: {
-                    marginTop: 5,
-                    fontSize: 12,
-                  },
-                },
-              },
-            },
           }}
         >
           <ModalsProvider>
